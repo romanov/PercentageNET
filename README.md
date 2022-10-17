@@ -10,7 +10,7 @@ Simple helpers to count percentage and more.
 
 `.Count(1000, 20)` = 200
 
-2. Substract 20% from 1000%
+2. Substract 20% from 1000
 
 `.Substract(1000, 20)` = 800
 
