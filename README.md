@@ -21,3 +21,7 @@ Simple helpers to count percentage and more.
 3.2 Add 20% to 1000 (upcharge mode)
 
 `.Add(1000, 20, AddMode.Upcharge)` = 1250
+
+## Documentation
+[] Tests
+[] More helpers
