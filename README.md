@@ -22,6 +22,6 @@ Simple helpers to count percentage and more.
 
 `.Add(1000, 20, AddMode.Upcharge)` = 1250
 
-## Documentation
+## Todo
 - [ ] Tests
 - [ ] More helpers
