@@ -2,25 +2,39 @@
 
 Simple helpers to count percentage and more.
 
-`Install-Package PercentageNET -Version 1.0.0`
+````bash
+> Install-Package PercentageNET -Version 1.0.0
+````
 
 ## Documentation
 
 Count 20% from 1000:
 
-`.Count(1000, 20)` = 200
+````csharp 
+var result = PercentageHelper.Count(1000, 20);
+// result = 200
+````
 
 Substract 20% from 1000
 
-`.Substract(1000, 20)` = 800
+````csharp
+var result = PercentageHelper.Substract(1000, 20);
+// result = 800
+````
 
 Add 20% to 1000 (simple mode)
 
-`.Add(1000, 20)` = 1200
+````csharp
+var result = PercentageHelper.Add(1000, 20);
+// result = 1200
+````
 
 Add 20% to 1000 (upcharge mode[^1])
 
-`.Add(1000, 20, AddMode.Upcharge)` = 1250
+````csharp
+var result = PercentageHelper.Add(1000, 20, AddMode.Upcharge);
+// result  = 1250
+````
 
 ## Todo
 - [ ] Tests
