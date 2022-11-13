@@ -3,6 +3,7 @@
 using System;
 
 using JetBrains.Annotations;
+using PercentageNET.SharedInternal;
 
 public static class PercentageHelper
 {
@@ -12,6 +13,10 @@ public static class PercentageHelper
         decimal inputNumber,
         decimal percentageAmount)
     {
+        
+        PercentageNetGuards.ThrowIfNull(inputNumber, nameof(inputNumber));
+        PercentageNetGuards.ThrowIfNull(percentageAmount, nameof(percentageAmount));
+        
         var number = Math.Abs(inputNumber);
         var percentage = Math.Abs(percentageAmount);
         var amount = number * (percentage / 100);
@@ -26,6 +31,11 @@ public static class PercentageHelper
         decimal inputNumber,
         decimal percentageAmount)
     {
+        
+        PercentageNetGuards.ThrowIfNull(inputNumber, nameof(inputNumber));
+        PercentageNetGuards.ThrowIfNull(percentageAmount, nameof(percentageAmount));
+        
+        
         var number = Math.Abs(inputNumber);
 
         return number - Count(inputNumber, percentageAmount);
@@ -39,6 +49,11 @@ public static class PercentageHelper
         decimal percentageAmount,
         AddMode mode = AddMode.Simple)
     {
+        
+        PercentageNetGuards.ThrowIfNull(inputNumber, nameof(inputNumber));
+        PercentageNetGuards.ThrowIfNull(percentageAmount, nameof(percentageAmount));
+        
+        
         var number = Math.Abs(inputNumber);
 
         if (mode == AddMode.Simple)
@@ -60,15 +75,14 @@ public static class PercentageHelper
         decimal compareTo,
         decimal secondNumber)
     {
-        if (compareTo == 0 || secondNumber == 0)
-        {
-            throw new ArgumentNullException();
-        }
+       PercentageNetGuards.ThrowIfNull(compareTo, nameof(compareTo));
+       PercentageNetGuards.ThrowIfNull(secondNumber, nameof(secondNumber));
 
         var amount = (compareTo - secondNumber) / Math.Abs(compareTo) * 100;
 
         return amount;
     }
 
+    
     
 }
