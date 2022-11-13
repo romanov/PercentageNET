@@ -2,6 +2,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
 		<LangVersion>latest</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>
 	</PropertyGroup>
 	<PropertyGroup Label="CompilerParams">
 		<AllowUnsafeBlocks>false</AllowUnsafeBlocks>
@@ -19,4 +20,5 @@
 		<Utf8Output>true</Utf8Output>
 		<ErrorEndLocation>true</ErrorEndLocation>
 	</PropertyGroup>
+ 
 </Project>

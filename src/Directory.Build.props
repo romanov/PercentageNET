@@ -1,3 +1,23 @@
 <Project>
-	<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"/>
+    <PropertyGroup Label="SourceLinkConfig">
+        <!--  build using Azure DevOps -->
+        <!-- https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#system-variables -->
+        <ContinuousIntegrationBuild Condition="'$(TF_BUILD)' == 'true'">True</ContinuousIntegrationBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Deterministic>true</Deterministic>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <DebugType>embedded</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/romanov/PercentageNET</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/romanov/PercentageNET</PackageProjectUrl>
+        <CopyDocumentationFilesFromPackages>true</CopyDocumentationFilesFromPackages>
+        <CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages> 
+    </PropertyGroup>
+ 
+ 
+   <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />  
 </Project>
