@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<AssemblyName>PercentageNET</AssemblyName>
 		<PackageVersion>1.0.0</PackageVersion>
-		<Authors>PercentageNEt</Authors>
+		<Authors>PercentageNET</Authors>
 		<PackageIcon>icon.png</PackageIcon>
 		<Title>Simple percentage helpers for .NET</Title>
 		<Description>Simple helpers to manipulate and work with percentages</Description>
