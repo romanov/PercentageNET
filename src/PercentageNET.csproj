@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <PackageIcon>icon.png</PackageIcon>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Title>Simple percentage helpers for .NET</Title>
+        <Description>Simple helpers to manipulate and work with percentages</Description>
+        <Copyright>GPL-3.0 license</Copyright>
+        <PackageProjectUrl>https://github.com/romanov/PercentageNET</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/romanov/PercentageNET</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>percentage, percent, percents, math</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+
+        <None Include="..\assets\icon.png" Pack="true" PackagePath="" />
+
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+<Project>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup Label="CompilerParams">
+		<AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PlatformTarget>anycpu</PlatformTarget>
+	</PropertyGroup>
+	<PropertyGroup Label="DebugBuildOnly" Condition="'$(Configuration)'=='Debug'">
+		<WarningLevel>5</WarningLevel>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<ReportAnalyzer>true</ReportAnalyzer>
+		<GenerateFullPaths>true</GenerateFullPaths>
+		<PreferredUILang>en-US</PreferredUILang>
+		<Utf8Output>true</Utf8Output>
+		<ErrorEndLocation>true</ErrorEndLocation>
+	</PropertyGroup>
+</Project>

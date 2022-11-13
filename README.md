@@ -37,7 +37,9 @@ var result = PercentageHelper.Add(1000, 20, AddMode.Upcharge);
 ````
 
 ## Todo
+
 - [ ] Tests
 - [ ] More helpers
 
-[^1]: For example you need to upcharge your items for sale. Use this mode to get "real" percentage for following discount on this amount.
+[^1]: For example you need to upcharge your items for sale. Use this mode to get "real" percentage for following
+discount on this amount.
